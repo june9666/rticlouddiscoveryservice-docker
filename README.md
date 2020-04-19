@@ -36,6 +36,10 @@ Run in Kubernetes:
 ```
 $ kubectl apply -f rticloudservicediscovery.yml
 ```
+Add ENV variable to your DDS publish/subscribe pod:
+```
+$ export NDDS_DISCOVERY_PEERS="rtps@rti-cloud-discovery.default:7400"
+```
 
 # More info
 
