@@ -10,7 +10,7 @@ I used https://s3.amazonaws.com/RTI/Bundles/6.0.1/Evaluation/rti_connext_dds-6.0
   x86 64bit Ubuntu 16.04 LTS (kernel 4.x & gcc 5.4.0) installer.  
 Complete the install, set your NDDSHOME environmental variable, 
 ```
-$ export NDDSHOME=/<path_to_installed_dir>
+$ export NDDSHOME=<path_to_installed_dir>
 ```
 and place your license to $NDDSHOME/rti_license.dat.  
 
