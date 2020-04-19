@@ -32,6 +32,10 @@ Run the container:
 ```
 $ docker run -d --name rticlouddiscoveryservice rticlouddiscoveryservice
 ```
+Run in Kubernetes:
+```
+$ kubectl apply -f rticloudservicediscovery.yml
+```
 
 # More info
 

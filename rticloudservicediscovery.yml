@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rti-cloud-discovery
+spec:
+  selector:
+    matchLabels:
+      run: rti-cloud-discovery
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: rti-cloud-discovery
+    spec:
+      containers:
+      - name: rti-cloud-discovery
+        image: rticlouddiscoveryservice:1.0
+        ports:
+        - containerPort: 7400
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rti-cloud-discovery
+spec:
+  selector:
+    run: rti-cloud-discovery
+  ports:
+    - protocol: UDP
+      port: 7400
+      targetPort: 7400
